@@ -22,19 +22,6 @@ The goal of the project is to establish a robust event-driven architecture that 
 2. **Lambda Functions in Action**: Tailored Lambda functions process the incoming data. Tasks such as data validation, transformation, and enrichment are achieved through these functions.
 3. **SNS Notifications**: After processing, Lambda functions publish notifications to SNS topics. This begins the distribution of processed data to subscribing systems, facilitating real-time updates.
 
-## Installation and Usage
-
-1. **Prerequisites**: Ensure you have an AWS account, AWS CLI, and Python 3.7+ installed.
-2. **Installation**: Clone this repository and install required Python libraries using `pip install -r requirements.txt`.
-3. **Configuration**: Configure your S3 bucket, IAM roles, Lambda functions, and SNS topics as described in the project documentation.
-4. **Deploy**: Deploy the Lambda functions using the AWS Management Console, AWS CLI, or other preferred methods.
-5. **Testing**: Upload files and folders to the S3 bucket and monitor SNS topics for notifications.
-
-## Project Structure
-
-- `lambda_function.py`: Contains the AWS Lambda function code responsible for processing S3 events and sending notifications.
-- `example_test_event.json`: Provides an example test event for simulating S3 events in the Lambda console.
-
 ## Key Takeaways
 
 - **Scalability and Responsiveness**: The architecture showcased its prowess in handling large datasets and rapidly responding to changes. This is crucial for applications demanding real-time insights.
